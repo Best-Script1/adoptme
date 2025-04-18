@@ -9,7 +9,7 @@ ScreenGui.ResetOnSpawn = false
 -- Loading Screen
 local LoadingFrame = Instance.new("Frame", ScreenGui)
 LoadingFrame.Size = UDim2.new(1, 0, 1, 0)
-LoadingFrame.BackgroundColor3 = Color3.new(0, 0, 0)  -- Arka plan siyah yapıldı
+LoadingFrame.BackgroundColor3 = Color3.new(0, 0, 0)  -- Arka plan siyah
 
 local LoadingImage = Instance.new("ImageLabel", LoadingFrame)
 LoadingImage.Size = UDim2.new(1, 0, 1, 0)
@@ -28,7 +28,7 @@ LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
 -- Loading animation
 for i = 1, 100, 2 do
     LoadingText.Text = "Loading... " .. i .. "%"
-    task.wait(0.14) -- Total wait time ~7 seconds
+    task.wait(0.14)
 end
 task.wait(0.2)
 LoadingFrame:Destroy()
@@ -53,7 +53,12 @@ Background.BackgroundTransparency = 1
 local Title = Instance.new("TextLabel", Frame)
 Title.Size = UDim2.new(1, 0, 0, 30)
 Title.BackgroundTransparency = 1
-Title.Text = "BL3TZ HUB ADOPT ME"  -- Başlık korundu
+Title.Text = "BL3TZ HUB ADOPT ME"
 Title.Font = Enum.Font.GothamBlack
 Title.TextSize = 20
-Title.TextColor3 = Color3.fromRGB(255, 255,
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+-- Subtitle
+local Subtitle = Instance.new("TextLabel", Frame)
+Subtitle.Size = UDim2.new(1, 0, 0, 20)
+Subtitle.Position = UDim2.new(0
